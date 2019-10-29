@@ -1,50 +1,119 @@
 body header {
 	font-size: 300px;
+	font-family: 'Hind', sans-serif;
+	display: flex;
+	flex-direction: column;
+	transition-property: opacity; 
+	transition-duration: 1s;
+	transition-timing-function: ease;
+	opacity: 0.5;
+	
 
+}
+header {
+	text-align: left;
+	flex-wrap: wrap;
+	width: auto;
+	white-space: normal;
+    overflow: hidden;
+
+}
+body header:hover {
+	opacity: 1;
 }
 
 nav {
 	display:flex;
-	justify-content: center;
-	align-items: center;
-	flex-direction: wrap;
-	flex-flow: column;
-	width: 50vw;
-	height: 50vh;
-	padding-right: 300px;
-	padding-left:300px; 
+	justify-content: space-between;
+	align-items: center justify;
+	flex-direction: column;
+	flex-flow: column wrap;
+	padding-right: 600px;
+	padding-left:600px; 
+	flex-basis: 100px;
 }
-body nav p {
-	display: inline-flex;
-	justify-content: center;
-}
-body nav p:hover {
+body nav a: hover{
 	opacity: 50%
 }
-/*div p {
+nav p {
 	display: flex;
 	justify-content: center;
 	flex-flow: wrap;
 	flex-direction: column;
+}
+body nav p {
+	display: inline-flex;
+	justify-content: center;
+	flex-basis: 500px;
+}
+nav p a:hover {
+	opacity: 50%
+}
+div {
+	display: inline-block;
+	margin: 0 auto;
+	text-align: center justify;
+	padding-right: 600px;
+	padding-left:600px; 
 
-}*/
+
+
+}
 nav p a {
   		color: red;
   	}
-.swizz-2 {
-	display: inline-flex;
-	flex-direction: row;
-	justify-content: space-between;
-
+a:hover{
+	font-size: 200px;
+	transition-property: font-size;
+	transition-timing-function: ease-in;
+	transition-duration: 1s
 }
+/*.swizz-2 {
+	display: inline-flex;
+	flex-direction: column;
+	justify-content: flex-end;
+
+}*/
 img {
-	display: flex;
-	align-items: center;
-	justify-content:center;
-	flex-flow: wrap;
+	display: block;
+	margin: 0 auto;
 	width: 50%;
 	height: 50%;
+	line-height: 0;
+}
+img:hover {
+	width: 120%;
+	height: 120%;
+	transition-property: width height;
+	transition-timing-function: ease-in;
+	transition-duration: 1s
 }
 .image_guide {
+	text-align: center;
 
 }
+p
+{
+	font-family: 'Almarai', sans-serif;
+}
+.black-art-title {
+	font-family: 'Roboto Mono', monospace;
+	font-size: 300px;
+	color: white;
+	
+}
+#hank_header {
+	font-size: 250px;
+	
+}
+.highlight {
+	background-color:#ee3;
+
+}
+
+@-webkit-keyframes flash {
+  from,
+  50%,
+  to {
+    opacity: 1;
+  }
