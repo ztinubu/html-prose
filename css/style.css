@@ -1,5 +1,29 @@
+html {
+	width: auto;
+	height: auto;
+}
+a {
+	text-decoration: none;
+	color: #ccf2ff;
+}
+a:hover{
+	font-size: 15.5px;
+	transition-property: opacity;
+	opacity: .2;
+	transition-duration: 1s;
+	transition-timing-function: ease;
+	color: #ffffe6;
+
+
+}
+.black-art-title {
+	font-family: 'Almarai', sans-serif;
+	font-size: 150px;
+	color: #595959;
+	text-align: center;	
+}
 body header {
-	font-size: 300px;
+	font-size: 100px;
 	font-family: 'Hind', sans-serif;
 	display: flex;
 	flex-direction: column;
@@ -7,8 +31,38 @@ body header {
 	transition-duration: 1s;
 	transition-timing-function: ease;
 	opacity: 0.5;
-	
+	justify-content: flex-start;
+	text-align: center;
+	padding: 0 500px; 
+	margin: 1em 0;
 
+}
+body:hover{
+	background-color: black;
+	color: white;
+}
+body header:hover {
+	opacity: 1;
+}
+body nav a: hover{
+	opacity: 50%;
+
+}
+body nav p {
+	display: inline-flex;
+	justify-content: center;
+	flex-basis: 300px;
+}
+div {
+	animation: flash 1.5s linear infinite alternate;
+   -webkit-animation: flash 1.5s linear infinite alternate;
+	text-align: justify;
+	padding: 0 600px;
+	font-size: 600px;
+}
+div:hover {
+	animation-play-state: initial;
+	animation-play-state: paused;
 }
 header {
 	text-align: left;
@@ -16,24 +70,67 @@ header {
 	width: auto;
 	white-space: normal;
     overflow: hidden;
+    position: relative;
+}
+.home_page_index {
+	display: flex;
+	justify-content: center space-between;
+	flex-direction: column;
+	padding-left:0;
+	opacity: .75;
+	transition-timing-function: ease-in-out;
+	list-style-type: none;
+	text-decoration: none;
+	align-items: center;
+	text-align: justify;
+}
+.home_page_index:hover  {
+	color: white;
+}
+.highlight {
+	background-color: #ccf2ff;
+	margin-right: 0;
+	position: relative;
+	size: inherit;
+}
+img {
+	display: block;
+	margin: 0 auto;
+	width: 50%;
+	height: 50%;
+	line-height: 25px;
+	opacity: 0.1;
+}
+img:hover {
+	width: 50%;
+	height: 50%;
+	transition-property: width height;
+	transition-timing-function: ease-in;
+	transition-duration: 1s;
+	opacity:1;
+}
+.image_guide {
+	text-align: center;
+	padding: 0;
+	font-size: 100px;
 
 }
-body header:hover {
-	opacity: 1;
+img {
+	margin: 20px auto;
 }
-
+li {
+	margin: -3px;
+	font-family: 'Almarai', sans-serif;
+}
 nav {
 	display:flex;
 	justify-content: space-between;
-	align-items: center justify;
+	text-align: justify;
+	align-items: center;
 	flex-direction: column;
 	flex-flow: column wrap;
-	padding-right: 600px;
-	padding-left:600px; 
+	padding: 0 600px;
 	flex-basis: 100px;
-}
-body nav a: hover{
-	opacity: 50%
 }
 nav p {
 	display: flex;
@@ -41,79 +138,45 @@ nav p {
 	flex-flow: wrap;
 	flex-direction: column;
 }
-body nav p {
-	display: inline-flex;
-	justify-content: center;
-	flex-basis: 500px;
-}
-nav p a:hover {
-	opacity: 50%
-}
-div {
-	display: inline-block;
-	margin: 0 auto;
-	text-align: center justify;
-	padding-right: 600px;
-	padding-left:600px; 
-
-
-
-}
 nav p a {
-  		color: red;
+  		color: #ccf2ff;
+  		text-decoration: none;
   	}
-a:hover{
-	font-size: 200px;
-	transition-property: font-size;
-	transition-timing-function: ease-in;
-	transition-duration: 1s
-}
-/*.swizz-2 {
-	display: inline-flex;
-	flex-direction: column;
-	justify-content: flex-end;
-
-}*/
-img {
-	display: block;
-	margin: 0 auto;
-	width: 50%;
-	height: 50%;
-	line-height: 0;
-}
-img:hover {
-	width: 120%;
-	height: 120%;
-	transition-property: width height;
-	transition-timing-function: ease-in;
-	transition-duration: 1s
-}
-.image_guide {
-	text-align: center;
-
+nav p a:hover {
+	opacity: .3;
+	color:orange;
 }
 p
 {
 	font-family: 'Almarai', sans-serif;
 }
-.black-art-title {
-	font-family: 'Roboto Mono', monospace;
+.swizz-2 {
+	display: inline-flex;
+	flex-direction: column;
+	justify-content: flex-end;
+}
+  .swizz_page_2 {
+  	display: flex;
+  	justify-content: center;
+  }
+  ul{
+  	margin-bottom: 300px;
+  }
+
+.disturbed {
 	font-size: 300px;
-	color: white;
-	
-}
-#hank_header {
-	font-size: 250px;
-	
-}
-.highlight {
-	background-color:#ee3;
+	position: fixed;
 
 }
-
-@-webkit-keyframes flash {
+@keyframes flash {
   from,
   50%,
   to {
     opacity: 1;
   }
+
+  25%,
+  75% {
+    opacity: 0;
+  }
+}
